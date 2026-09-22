@@ -46,7 +46,7 @@
   const username = prompt("Masukkan nama kamu:") || "Anonim";
 
   // 2. Hubungkan ke Server Pterodactyl (Ganti IP & Port milikmu)
-  const socket = io("http://140.213.74.29:3156");
+  const socket = io("https://plenty-bats-melt.loca.lt");
 
   // Masuk ke Room
   socket.emit('join_room', { room: roomId, username: username });
